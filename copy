@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width"><!--コンテンツの幅にデバイスの幅をあわす-->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/lightbox.css"><!--ライトボックスCSS-->
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!--bxslider CSS-->
+<link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:480px)"><!--スマホ用CSS-->
+
+<link rel="stylesheet" type="text/css" href="FullscreenOverlayStyles/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="FullscreenOverlayStyles/css/demo.css" />
+<link rel="stylesheet" type="text/css" href="FullscreenOverlayStyles/css/style1.css" />
+<script src="FullscreenOverlayStyles/js/modernizr.custom.js"></script>
+
+<title>山下建築舎</title>
+</head>
+
+<body id="top">
+    <header id="top">
+      <div class="container-header">
+        <nav>
+          <ul>
+          	<li><a href="#works">WORKS</a></li>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#policy">POLICY</a></li>
+            <li><a href="#frow">FLOW</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="https://blog.goo.ne.jp/yamashita-817">BLOG</a></li>
+          </ul>
+        </nav>
+      	<img src="images/image-top1.png" alt="家">
+        <h1>山下建築舎</h1>
+        <div class="introduction"><h3>INTRODUCTION</h3>
+        <p>この度は、山下建築舎に興味を持っていただき誠にありがとうございます。<br>
+        当事務所は、地域に根ざした一級建築士事務所です。<br>
+        お客様の求めるものを理解し、より良い提案をさせていただけるよう丁寧にヒアリングを重ねた上で、心をこめて設計させていただきます。<br>
+        新築からリフォーム、耐震診断等、お気軽にご相談下さい。お待ちしております。</p></div>
+      </div>
+    </header>
+
+    <main>
+    <section class="sticky"><button id="trigger-overlay" type="button"><img src="images/menu.gif" alt="メニュー"></button></section>
+
+    <div class="container-main">
+        <article id="works">
+        <h2 class="sticky">WORKS</h2>
+
+        <div class="container-works">
+          <div class="adress">
+            <table>
+              <tr>
+                <th>Address</th>
+                <td>〒527-0022<br>滋賀県東近江市八日市上ノ町6-6</td>
+                </tr>
+              <tr>
+                <th>Phone</th>
+                <td>0748-22-5677</td>
+                </tr>
+              <tr>
+                <th>Email</th>
+                <td><a href="#contact">kymsh1215@gmail.com</a></td>
+                </tr>
+              </table>
+          </div>
+          <div class="house-infomation">
+            <script type="text/javascript">
+              //if ($('#fig1').is(':visible')) {
+                document.write("<div><h3>山下建築舎事務所</h3><p>2013.04</p></div>")
+              //  }else
+              //if ($('#fig2').is(':visible')) {
+                document.write("<div><h3>いかきん商店</h3><p>2014.06</p></div>")
+               // }else
+			 // if ($('#fig3').is(':visible')) {
+                document.write("<div><h3>aun</h3><p>2010.04</p></div>")
+              //  }
+				</script>
+            </div>
+          <div class="figure">
+            <figure><a id="fig1" href="images/img01.jpg" data-lightbox="worksimg"><img src="images/image.png" alt=""></a></figure>
+            <figure><a id="fig2" href="images/img02.jpg" data-lightbox="worksimg"><img src="images/image(1).png" alt=""></a></figure>
+            <figure><a id="fig3" href="images/img03.jpg" data-lightbox="worksimg"><img src="images/DSCN3017.JPG" alt=""></a></figure>
+            </div>
+        </div>
+        </article>
+
+        <article id="profile">
+        	<h2 class="sticky">PROFILE</h2>
+            <dl>
+            	<dt>ハンドルネーム</dt><dd>katuya</dd>
+                <dt>性別</dt><dd>男</dd>
+                <dt>在住地</dt><dd>京都府</dd>
+                <dt>趣味</dt><dd>スキー</dd>
+                <dt>習得スキル</dt><dd>Illustrater, Potoshop, HTML5/CSS3, Javascript</dd>
+            </dl>
+        </article>
+
+        <article id="policy">
+        	<h2 class="sticky">POLICY</h2>
+            <dl>
+            	<dt>ハンドルネーム</dt><dd>katuya</dd>
+                <dt>性別</dt><dd>男</dd>
+                <dt>在住地</dt><dd>京都府</dd>
+                <dt>趣味</dt><dd>スキー</dd>
+                <dt>習得スキル</dt><dd>Illustrater, Potoshop, HTML5/CSS3, Javascript</dd>
+            </dl>
+        </article>
+
+        <article id="contact">
+        	<h2 class="sticky">CONTACT</h2>
+            <form action="http://ykty.php.xdomain.jp/mail.php" method="post">
+            	<table>
+                  <tr>
+                    <th scope="row"><label for="name">お名前（必須）</label></th>
+                    <td><input type="text" name="name" id="name" placeholder="全角で入力してください" required></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><label for="mail">メールアドレス（必須）</label></th>
+                    <td><input type="email" name="mail" id="mail" placeholder="半角で入力してください" required></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><label for="inquiry">お問い合わせ内容</label></th>
+                    <td><textarea name="inquiry" id="inquiry" placeholder="できるだけ詳しく入力してください"></textarea></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">メール返信</th>
+                    <td>
+                    	<label><input type="radio" name="re" value="yes">&nbsp;希望します</label>&nbsp;&nbsp;&nbsp;
+                        <label><input type="radio" name="re" value="no">&nbsp;希望しません</label>
+                    </td>
+                  </tr>
+                </table>
+                 <p><button type="submit">送信</button></p>
+            </form>
+      </article>
+    </div><!--container-main-->
+    </main>
+	<footer>
+    	<p><small>Copyright &nbsp; 2019 fjdosfjwfiofe All Rights Reserved.</small></p>
+    </footer>
+
+    <script src="js/jquery-1.7.2.min.js"></script><!--ライブラリ本体-->
+    <script src="js/lightbox.min.js"></script><!--ライトボックスプラグインJS-->
+
+    <script src="js/jquery.smoothScroll.min.js"></script><!--スムーススクロール-->
+    <!--スムーススクロール実行プログラム-->
+    <script>
+		$('a').smoothScroll({
+			offset:130
+		});
+	</script>
+
+    <script src="js/jquery.bxslider.js"></script><!--bxslider JS-->
+    <!--bxslider実行コード-->
+    <script >
+	$(document).ready(function(){
+	  $('.bxslider').bxSlider({
+		  auto: true, //オートスタート//
+		  mode: 'fade', //'vertical'で縦方向にスライド、’fade’でフェードイン//
+		  pager: false, //下部のボタン非表示//
+		  });
+	});
+	</script>
+
+    	<div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+                	<li><a href="#top">TOP</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#policy">POLICY</a></li>
+                    <li><a href="#frow">FLOW</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+		<script src="FullscreenOverlayStyles/js/classie.js"></script>
+		<script src="FullscreenOverlayStyles/js/demo1.js"></script>
+</body>
+</html>
+
+
+<script type="text/javascript">
+var targetElement = document.getElementsByID( "figcap1" ) ;
+
+setInterval( function() {
+  var clientRect = targetElement.getBoundingClientRect() ;//位置情報取得
+  var y = clientRect.top ;// 画面内の位置（画面トップから）
+
+  if(y==(screen.availHeight/2)){
+    //要素に設定されているclassの一覧を取得する
+    var list = obj.classList;
+    console.log(list);
+    obj.classList.remove("sticky-fg2");
+    console.log(obj.classList);
+  }else {
+    var list = obj.classList;
+    console.log(list);
+    var result = obj.classList.contains("sticky-fg2")
+    if(result){}
+    else {
+      obj.classList.add("sticky-fg2");
+      console.log(obj.classList);
+    }
+  }
+}, 100 ) ;
+
+</script>

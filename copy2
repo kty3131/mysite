@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* リセット CSS Document */
+@import url("html5doctor_reset.css");
+
+@font-face {
+    font-family: 'sofiapro-light';
+    src: url('../sofiapro-light-webfont.woff2') format('woff2'),
+         url('../sofiapro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*基本レイアウト*/
+body{
+	font-family:sofiapro-light,"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background-color:#fff;
+	color:333;
+}
+header{
+	width:100%;
+	height:1000px;
+	margin-bottom:50px;
+	/*position:fixed;*//*位置固定*/
+	/*z-index:999;*/
+}
+h1{
+	font-family:sofia-pro, sans-serif;
+	font-size:30px;
+	font-weight:100;
+	float:right;
+	text-decoration:none;
+	line-height:1.2;
+	margin:0;
+	padding:0;
+}
+h2{
+	font-family:sofiapro-light, sans-serif;
+	font-size:60px;
+  display: block;
+  width: 100px;
+	/*border-left:20px solid #f00;*/
+	padding:20px 0 0 10px;
+	margin-bottom:40px;
+}
+h3{
+	font-family:sofiapro-light, sans-serif;
+	font-size:18px;
+	text-decoration:none;
+}
+
+
+.container-header{
+	width:800px;
+	height:auto;
+	margin:0 auto;
+}
+main{
+	width:100%;
+	margin:0 auto;
+	padding-top:130px;
+}
+.container-main{width:90%;margin:0 auto;}
+article{
+	min-height:500px;
+	margin-bottom:50px;
+	background-color:#fff;
+	padding:0 30px 30px;
+	/*overflow:hidden;*/
+	clear:both;
+}
+
+footer{
+	width:100%;
+	height:70px;
+	background-color:#666;
+}
+footer p{
+	text-align:center;
+	line-height:70px;
+}
+
+.sticky {
+  position: -webkit-sticky; /* safari対応 */
+  position: sticky;
+  top: 10px;　/* 上端から10pxのところで固定 */
+  z-index: 999;
+}
+
+
+/*ナビゲーション*/
+nav{border-bottom:solid #000 1px;margin-top:50px}
+nav ul{display:flex;justify-content:space-between}
+nav ul li{
+	height:30px;
+	display:block;
+	line-height:30px;
+}
+nav ul li a{
+	font-family:sofiapro-light, sans-serif;
+	font-size:18px;
+	text-decoration:none;
+	color:#000;
+	display:block;
+}
+nav ul li a:hover{
+	border-bottom:2px solid #f00;
+}
+header img{margin-top:20px;margin-bottom:0}
+header .introduction{
+	clear:both;
+	font-weight: normal;
+	margin-top:150px;
+}
+header .introduction p{
+	font-size:12px;
+	line-height:normal;
+	margin-top:20px;
+}
+
+
+
+/*わーくす*/
+.adress{
+	height:100px;
+	position:-webkit-sticky; /* safari対応 */
+	position:sticky;
+	bottom:0;
+	text-align:left;
+	background-color:#0FF;
+}
+.house-infomation div{
+/*	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	font-size:200%;
+	margin-top:100px;
+	margin-bottom:530px;
+	height:100px;
+	position:-webkit-sticky; /* safari対応 */
+	position:sticky;
+	top:50%;
+	left:50%;
+	background-color:#fff;
+}
+figure img{
+	width:400px;
+	height:530px;
+	margin:100px 0 0 0;
+}
+.container-works{display:flex;justify-content:space-between;height: 2000px}
+#works{height:2000px}
+
+
+/*プロフィール,ポリシー*/
+
+dl{
+	width:100%;
+}
+dt{
+	width:30%;
+	border-top:1px solid #000;
+	float:left;
+	padding:35px 20px;
+	box-sizing:border-box;/*padding,borderを幅、高さの中に内包する*/
+}
+dd{
+	width:69%;
+	border-top:1px solid #000;
+	float:right;
+	padding:35px 20px;
+	box-sizing:border-box;
+}
+dt:last-of-type, dd:last-of-type{/*最後の子要素（同一要素）*/
+	border-bottom:1px solid #000;
+}
+
+
+
+
+/*コンタクトフォーム*/
+form table{
+	width:100%;
+}
+form table th{
+	width:40%;
+	padding:30px 0;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	font-weight:normal;
+	text-align:left;
+}
+form table td{
+	width:70%;
+	padding:30px 0;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+form input[type="text"], input[type="email"]{
+	width:60%;
+}
+form input[type="radio"]{
+	vertical-align:baseline;
+}
+textarea{
+	width:80%;
+	height:100px;
+	resize:none;
+	vertical-align:middle;/*見出しセルと文字の天地中央ぞろえ*/
+}
+form p{
+	text-align:center;
+	margin-top:20px;
+}
+form p button{
+	padding:5px 40px;
+}
+img{
+	max-width:100%;
+	height:auto;
+}

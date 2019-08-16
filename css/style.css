@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* リセット CSS Document */
+@import url("html5doctor_reset.css");
+
+@font-face {
+    font-family: 'sofiapro-light';
+    src: url('../sofiapro-light-webfont.woff2') format('woff2'),
+         url('../sofiapro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*基本レイアウト*/
+body{
+	font-family:sofiapro-light,"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background-color:#fff;
+  width: 100%;
+}
+h1{
+	font-family:sofiapro-light,"メイリオ", sans-serif;
+	font-size:2.5vw;
+	font-weight:100;
+	text-decoration:none;
+	line-height:1.2;
+	margin:0;
+	padding:0;
+}
+a h1:hover{
+	border-bottom:1px solid #f00;
+}
+h2{
+	font-family:sofiapro-light, sans-serif;
+	font-size:5vw;
+  width: 10vw;
+  cursor: pointer;
+}
+h2:hover{border-bottom: 1px solid #f00}
+h3{
+	font-family:sofiapro-light, sans-serif;
+	font-size:1.5vw;
+	text-decoration:none;
+}
+
+.top{
+	width:800px;
+	height:auto;
+	margin:0 auto;
+}
+main{
+	width:100%;
+	margin:0 auto;
+	padding-top:0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ); /* IE6-9 */
+}
+.container-main{width:90%;margin:0 auto;}
+article{
+	background-color:#fff;
+	padding:0 2vw 2vw;
+	margin-top: 0;
+	clear:both;
+}
+
+footer{
+	width:100%;
+	height:10vh;;
+	background-color:#666;
+  margin-bottom: -25px;
+}
+footer p{
+	text-align:center;
+	line-height:10vh;
+}
+button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+}
+.sticky {
+  position: -webkit-sticky; /* safari対応 */
+  position: sticky;
+  top: 3vh;　/* 上端から10pxのところで固定 */
+  z-index: 999;
+}
+a:hover{
+	border-bottom:1px solid #f00;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+
+
+/*top*/
+.top nav{border-bottom:solid #8a8c7e 1px;margin-top:50px}
+nav ul{display:flex;justify-content:space-between}
+nav ul li{
+	height:30px;
+	display:block;
+	line-height:30px;
+}
+nav ul li a{
+	font-family:sofiapro-light, sans-serif;
+	font-size:18px;
+	text-decoration:none;
+	color:#8a8c7e;
+	display:block;
+}
+.top img{margin-top:20px;margin-bottom:0}
+.top h1{text-align: right;color: #8a8c7e}
+.introduction{
+	clear:both;
+	font-weight: normal;
+	margin-top:100px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.introduction p{
+	font-size:12px;
+	line-height:normal;
+	margin-top:20px;
+}
+
+
+/*わーくす*/
+.adress{
+	height:auto;
+	text-align:left;
+  font-size: 1.1vw;
+  font-weight: 200;
+}
+.adress div{
+  position:-webkit-sticky; /* safari対応 */
+	position:sticky;
+	top:80vh;
+}
+.adress td{padding-left: 1vw}
+.adress th{font-weight: 400;}
+.adress span{font-weight: 100;}
+.adress a{color: #8a8c7e}
+.sticky-fg{
+  height: auto;
+}
+.sticky-fg div{
+	position:-webkit-sticky; /* safari対応 */
+	position:sticky;
+	top:50%;
+	left:50%;
+  padding: 0 0 50vh 0;
+  margin: 0;
+  font-size: 1vw;
+  font-weight:100;
+  /*background-color: #f87;*/
+}
+.figcap p{display: block;}
+.figcap p:hover{
+  font-size: 200%;
+  font-weight: 150%;
+  transform: translateX(-70%) translateY(-25%);
+  -webkit- transform: translateX(-70%) translateY(-25%);
+  width: 1vw;
+}
+.figure:last-child .sticky-fg div{padding: 0}
+figure img{
+  position:-webkit-sticky; /* safari対応 */
+  position:sticky;
+  top:-5vh;
+}
+figure{
+  height: 150vh;
+}
+figure img{
+	width:84vh;
+	height:111.3vh;
+}
+.figure{display:flex;justify-content:space-between;height:200vh;/*background-color: #586*/}
+.figure:last-child{height: 150vh}
+.house-infomation{height: 511.3vh;width: 60vw;margin-left: auto;}
+.container-works{display:flex;justify-content:space-between;height: 100%;margin-top: -15vh}
+#works{height:553vh;margin-bottom: 100vh;width: 95%;margin-left: auto;padding-right: 0}
+
+
+/*プロフィール,ポリシー*/
+.container-profile{
+  width:55vw;
+  margin-left: auto;
+  margin-top: 8vh
+}
+dl{
+  font-size: 1.2vw;
+}
+dt{
+  height: 8vh;
+	width:30%;
+	border-top:1px solid #000;
+	float:left;
+	padding:3vh 2vw;
+	box-sizing:border-box;/*padding,borderを幅、高さの中に内包する*/
+}
+dd{
+  height: 8vh;
+	width:69%;
+	border-top:1px solid #000;
+	float:right;
+	padding:3vh 2vw;
+	box-sizing:border-box;
+}
+dt:first-of-type, dd:first-of-type{
+  border-top: none;
+}
+dt:last-of-type, dd:last-of-type{/*最後の子要素（同一要素）*/
+	/*border-bottom:1px solid #000;*/
+}
+#profile div.sticky{height: 100vh;}
+#profile{height: 150vh;margin-bottom: 100vh}
+#policy div.sticky{height: 100vh;}
+#policy{height: 150vh;margin-bottom: 100vh}
+#profile .sticky h2{position: relative;}
+#profile .adress{
+  position: absolute;
+  top: 75vh;
+  left: 0%;
+}
+
+.face-img{height: 20vh;width: auto;display: inline-block;}
+.profile-img{
+  margin-bottom: 4vh;
+  margin-top: 3vh;
+}
+.profile-img a{
+  margin-left: 2vw;
+  font-size: 15px;
+}
+
+/*フロー*/
+.container-frow{width:55vw;margin-top: 30vh;margin-left:auto;}
+.bg1{width:80px;height:100%;top:0; float:left; background-color:#0F0}
+.flex-frow{display:flex;flex-direction: row;margin:0 0 100px 0}
+.nb{;position: relative;margin:0}
+.nb p{
+  font-size:3vw;
+  width:5vw;
+  margin:0;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  -webkit- transform: translateY(-50%);
+}
+.bun{margin-left: 5vw}
+.bun p{font-size:1vw;line-height:normal;}
+#frow{margin-bottom: 100vh}
+
+/*コンタクトフォーム*/
+form table{
+	width:100%;
+}
+form table th{
+	width:40%;
+	padding:2vh 0;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	font-weight:normal;
+	text-align:left;
+}
+form table td{
+	width:70%;
+	padding:2vh 0;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+form input[type="text"], input[type="email"]{
+	width:60%;
+}
+form input[type="radio"]{
+	vertical-align:baseline;
+}
+textarea{
+	width:80%;
+	height:30vh;
+	resize:none;
+	vertical-align:middle;/*見出しセルと文字の天地中央ぞろえ*/
+}
+form p{
+	text-align:center;
+	margin-top:20px;
+}
+form p button{
+	padding:5px 40px;
+}
+/*img{
+	max-width:100%;
+	height:auto;
+}*/
+form{
+  width:55vw;
+  margin-left: auto;
+  margin-top: 17vh;
+}
+#contact{height: 87vh;}
+
+
+/*map*/
+
+.ggmap {
+padding-bottom:0;
+padding:0;
+height: 0;
+overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+#map{
+  display: block;
+  position: absolute;
+  z-index: 999;
+  top: 80vh;
+  left: 70vw;
+  font-size: 3vw;
+  color: #777;
+}
+
+
+/*コメント一覧*/
+
+#comment{margin: 0;padding: 0;position: fixed;top: 0;left: -50vw;}
+.container-comment{margin: 0;padding: 0;position: relative;}
+.commentbox{margin: 0;padding: 0 0 0 7vw;background: rgba(153,204,51,0.9);
+  width: 35vw;
+  height: 35vh;
+  position: absolute;
+  top: 30vh;
+  opacity: 0;
+
+  transition: all 2s;
+}
+.commentbox.state-show{
+  opacity: 1;
+  transform: translate(50vw, 0);
+}

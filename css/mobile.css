@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* 480px以下の場合 */
+.container, main{
+	width:98%;
+	margin:0 auto;
+}
+header h1{
+	font-size:90%;
+	text-align:center;
+}
+nav{
+	text-align:center;
+}
+nav ul li{
+	width:31%;
+}
+dt, dd{
+	width:100%;
+	float:none;
+	text-align:center;
+	padding:20px 10px;
+}
+dt{
+	background-color:#CCC;
+}
+dt:last-of-type{
+	border-bottom:none;
+}
+dd{
+	border:none;
+}
+figure{
+	width:100%;
+	float:none;
+	text-align:center;
+}
+form table th,form table td{
+	display:block;
+	width:100%;
+	text-align:center;
+	border-bottom:none;
+}
+form table th{
+	background-color:#CCC;
+}
+form table{
+	border-bottom:1px solid #000;
+}
+form input[type="text"], form input[type="email"], textarea{
+	width:90%;
+}
+footer p{
+	font-size:60%;
+}
